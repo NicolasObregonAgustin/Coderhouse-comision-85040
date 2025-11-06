@@ -1,0 +1,283 @@
+/* Index CSS*/
+
+.cuerpo {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+}
+h2{
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
+p{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.navitem {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 30px;
+    list-style: none;
+}
+
+.navitem li a {
+    text-decoration: none;
+    color: red;
+}
+
+.lii a:hover {
+    color: rgb(255, 0, 0);
+}
+
+footer {
+    text-align: right;
+}
+
+/* MULTIMEDIA */
+
+.body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegador {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.navi {
+    font-size: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.navi li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.navi li a:hover {
+    color: red;
+}
+
+.galeria {
+    gap: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* para que bajen a otra fila si no entran */
+    gap: 5px;
+    /* espacio entre imágenes */
+    justify-content: center;
+    /* para centrar el grupo */
+}
+
+.galeria img {
+    width: 200px;
+    /* ancho fijo para todas */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+
+
+/* HISTORIA */
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: (repeat 1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+
+
+h1 {
+    grid-column: 2, 3;
+}
+
+.header {
+
+    display: grid;
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.main {
+    display: grid;
+    background-color: aqua;
+    grid-column: 1 / 2;
+    grid-row: 2 / 10;
+}
+
+.der {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: start;
+}
+
+.own {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.item {
+    height: 90%;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.main {
+    display: grid;
+    grid-template-areas:
+        "a a b b"
+        "a a c c"
+        "e d d d"
+        "e f f g"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+
+.a {
+    background-color: rgb(255, 255, 255);
+    grid-area: a;
+}
+
+.bio {
+    color: black;
+    background-color: white;
+}
+
+.b {
+    background-color: brown;
+    grid-area: b;
+}
+
+.gen {
+    background-color: brown;
+    color: black;
+}
+
+.c {
+    background-color: cadetblue;
+    grid-area: c;
+}
+
+.prem {
+    background-color: cadetblue;
+    color: black;
+}
+
+.d {
+    background-color: aquamarine;
+    grid-area: d;
+}
+
+.e {
+    background-color: blueviolet;
+    grid-area: e;
+}
+
+.frase {
+    background-color: blueviolet;
+
+}
+
+.f {
+    background-color: cadetblue;
+    grid-area: f;
+}
+
+.g {
+    background-color: coral;
+    grid-area: g;
+}
+
+
+
+/*Noticias*/
+
+
+.uul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: gray;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.lii a {
+    display: block;
+    color: aqua;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.lii a:hover {
+    background-color: black;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+/*Movil*/
+@media (min-width: 320px) and (max-width: 430px) {
+    .main {
+        grid-template-areas:
+            "a a"
+            "a a"
+            "b b"
+            "c c"
+            "d d"
+            "e e"
+            "f ."
+            ". g"
+        ;
+    }
+}
